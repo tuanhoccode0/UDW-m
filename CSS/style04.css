@@ -126,7 +126,7 @@ body{
 @keyframes changeImage{
 
     0%,45%{
-        background-image:url("hinh1.jpg");
+        background-image:url("../images/vinh-Ha-long.jpg");
     }
 
     50%,100%{
