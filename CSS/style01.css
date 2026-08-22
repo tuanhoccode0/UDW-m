@@ -10,27 +10,23 @@ h1{
 
 .normal{
     font-size:26px;
-    margin-bottom:35px;
 }
 
 .capitalize{
     text-transform:capitalize;
     font-size:28px;
     text-align:center;
-    margin-bottom:35px;
 }
 
 .uppercase{
     text-transform:uppercase;
     font-size:28px;
     text-align:right;
-    margin-bottom:35px;
 }
 
 .lowercase{
     text-transform:lowercase;
     font-size:28px;
-    margin-bottom:40px;
 }
 
 .dropcap{
@@ -41,9 +37,6 @@ h1{
 .dropcap::first-letter{
     font-size:90px;
     font-weight:bold;
-    float:left;
-    line-height:70px;
-    padding-right:8px;
 }
 
 .dropcap::first-line{
