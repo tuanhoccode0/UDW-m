@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 - Tính số ngày và Đồng hồ</title>
+    <style>
+        /* Định dạng cơ bản bám sát hình ảnh */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #container {
+            border: 1px solid #777; /* Viền xám cho hộp nội dung */
+            padding: 20px;
+            width: 400px;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 5px 10px;
+            font-family: inherit;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <!-- Nơi hiển thị kết quả số ngày -->
+        <h2 id="ket-qua-ngay"></h2>
+        
+        <!-- Nơi hiển thị thời gian (Ban đầu ẩn đi) -->
+        <div id="khu-vuc-thoi-gian" style="display: none;">
+            <h3 id="ngay-thang-nam"></h3>
+            <h3 id="dong-ho"></h3>
+        </div>
+
+        <button id="btn-xem-gio">Xem ngày giờ</button>
+    </div>
+
+    <!-- Nhúng file javascript -->
+    <script src="../JS/js02.js"></script>
+
+</body>
+</html>
