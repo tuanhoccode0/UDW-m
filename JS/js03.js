@@ -2,7 +2,7 @@
 function thongKe() {
     let str = document.getElementById('chuoi-nhap').value;
     
-
+   
     let totalChars = str.length;
 
 
@@ -18,10 +18,9 @@ function thongKe() {
         }
     }
 
-
+   
     let sortedKeys = Object.keys(charMap).sort();
-
-
+   
     let htmlContent = `Characters: ${totalChars} <br> Words: ${words} <br>`;
     
     sortedKeys.forEach(key => {

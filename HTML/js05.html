@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương trình xử lý chuỗi</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .container {
+            border: 2px solid #5b7fb3;
+            width: 550px;
+            padding: 20px;
+        }
+        marquee {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .input-group label {
+            width: 90px;
+        }
+        .input-group input[type="text"] {
+            flex-grow: 1;
+            padding: 4px;
+            border: 1px solid #ccc;
+        }
+        .input-group input[type="number"] {
+            width: 150px;
+            padding: 4px;
+            border: 1px solid #ccc;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .button-row {
+            margin-bottom: 5px;
+        }
+        button {
+            padding: 4px 10px;
+            font-family: inherit;
+            cursor: pointer;
+            margin: 0 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Chữ chạy từ phải sang trái -->
+        <marquee direction="left">CHƯƠNG TRÌNH XỬ LÝ CHUỖI</marquee>
+
+        <div class="input-group">
+            <label>Chuỗi S1:</label>
+            <input type="text" id="s1" value="Learning JAVASCRIPT is veRy easy">
+        </div>
+        <div class="input-group">
+            <label>Chuỗi S2:</label>
+            <input type="text" id="s2" value="javascript">
+        </div>
+        <div class="input-group">
+            <label>Chuỗi S3:</label>
+            <input type="text" id="s3" value="jQuery">
+        </div>
+        <div class="input-group">
+            <label>Vị trí chèn:</label>
+            <input type="number" id="pos" value="0" min="0">
+        </div>
+
+        <div class="button-group">
+            <div class="button-row">
+                <button onclick="chuanHoa()">Chuẩn hóa chuỗi</button>
+                <button onclick="daoChuoi()">Đảo chuỗi</button>
+                <button onclick="khoiPhuc()">Khôi phục</button>
+            </div>
+            <div class="button-row">
+                <button onclick="thayThe()">Thay thế S2 bằng S3</button>
+                <button onclick="chenChuoi()">Chèn S2 vào S1</button>
+                <button onclick="xoaChuoi()">Xóa S2 trong S1</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nhúng file JavaScript -->
+    <script src="../JS/js05.js"></script>
+</body>
+</html>
