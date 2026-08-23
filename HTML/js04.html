@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Xử lý Mảng</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .container {
+            border: 1px solid #777;
+            padding: 20px;
+            width: 450px;
+        }
+        .controls {
+            margin-bottom: 15px;
+        }
+        .controls input {
+            width: 80px;
+        }
+        .result-line {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="controls">
+            Nhập số phần tử: <input type="number" id="so-phan-tu" min="1"> <br><br>
+            <button onclick="taoMang()">Tạo mảng</button>
+            <button onclick="sapXepTang()">Sắp xếp mảng tăng</button>
+            <button onclick="sapXepGiam()">Sắp xếp mảng giảm</button>
+        </div>
+
+        <div id="mang-ban-dau" class="result-line">Mảng ban đầu: </div>
+        <div id="mang-tang" class="result-line">Mảng tăng dần: </div>
+        <div id="mang-giam" class="result-line">Mảng giảm dần: </div>
+    </div>
+
+    <!-- Nhúng file JavaScript -->
+    <script src="js04.js"></script>
+</body>
+</html>
