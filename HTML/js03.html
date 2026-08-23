@@ -2,93 +2,21 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Xử lý Mảng</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-        }
-        .container {
-            border: 1px solid #777;
-            padding: 20px;
-            width: 450px;
-        }
-        .controls {
-            margin-bottom: 15px;
-        }
-        .controls input {
-            width: 80px;
-        }
-        .result-line {
-            margin-top: 15px;
-            font-size: 16px;
-        }
-    </style>
+    <title>String Statistic</title>
 </head>
 <body>
 
     <div class="container">
-        <div class="controls">
-            Nhập số phần tử: <input type="number" id="so-phan-tu" min="1"> <br><br>
-            <button onclick="taoMang()">Tạo mảng</button>
-            <button onclick="sapXepTang()">Sắp xếp mảng tăng</button>
-            <button onclick="sapXepGiam()">Sắp xếp mảng giảm</button>
+        <h3>String Statistic</h3>
+        <div class="input-group">
+            String: <input type="text" id="chuoi-nhap" value="Hello, how are you? 1123425">
         </div>
-
-        <div id="mang-ban-dau" class="result-line">Mảng ban đầu: </div>
-        <div id="mang-tang" class="result-line">Mảng tăng dần: </div>
-        <div id="mang-giam" class="result-line">Mảng giảm dần: </div>
+        <button onclick="thongKe()">Statistic</button>
+        
+        <div id="ket-qua"></div>
     </div>
 
-    <script>
-        // Biến toàn cục để lưu trữ mảng đang thao tác
-        let mangHienTai = [];
 
-        function taoMang() {
-            let n = parseInt(document.getElementById('so-phan-tu').value);
-            
-            if (isNaN(n) || n <= 0) {
-                alert("Vui lòng nhập số phần tử lớn hơn 0!");
-                return;
-            }
-
-            // Làm mới mảng
-            mangHienTai = [];
-            
-            // Khởi tạo mảng ngẫu nhiên với các giá trị < 50
-            for (let i = 0; i < n; i++) {
-                mangHienTai.push(Math.floor(Math.random() * 50));
-            }
-
-            // In mảng ban đầu
-            document.getElementById('mang-ban-dau').innerText = "Mảng ban đầu:  " + mangHienTai.join("  ");
-            
-            // Xóa rỗng các kết quả sắp xếp trước đó (nếu có)
-            document.getElementById('mang-tang').innerText = "Mảng tăng dần: ";
-            document.getElementById('mang-giam').innerText = "Mảng giảm dần: ";
-        }
-
-        function sapXepTang() {
-            if (mangHienTai.length === 0) return;
-            
-            // Clone mảng bằng spread operator để không làm thay đổi mảng gốc, sau đó sort
-            let mangClone = [...mangHienTai];
-            mangClone.sort((a, b) => a - b);
-            
-            document.getElementById('mang-tang').innerText = "Mảng tăng dần:  " + mangClone.join("  ");
-        }
-
-        function sapXepGiam() {
-            if (mangHienTai.length === 0) return;
-            
-            let mangClone = [...mangHienTai];
-            mangClone.sort((a, b) => b - a);
-            
-            document.getElementById('mang-giam').innerText = "Mảng giảm dần:  " + mangClone.join("  ");
-        }
-    </script>
-
+    <script src="../JS/js03.js"></script>
 </body>
 </html>

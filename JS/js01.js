@@ -1,5 +1,5 @@
 
-let htmlContent = '<table>';
+let htmlContent = "<table>";
 
 
 htmlContent += '<tr><th colspan="4">BẢNG CỬU CHƯƠNG</th></tr>';
