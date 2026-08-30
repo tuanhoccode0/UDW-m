@@ -31,27 +31,23 @@
     <img id="anh1" src="../images/cat.jpg" width="250">
   </div>
 
-  <div class="anh-box">
-    <img id="anh2" src="../images/dog.jpg" width="250">
-    <p>Khi đưa con trỏ chuột lên hình thay đổi và phóng to</p>
-  </div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script>
-  $(document).ready(function(){
-    $('#anh').hover(
-      function () {
-        $(this).attr('src', '../images/dog.jpg'); 
-        $(this).animate({width: '300px'}, 300);
-},
-  function() {
-    $(this).attr('src', './images/cat.png');
-  $(this).animate({width: '250px'}, 300);
-}
-);
-  });
+    $(document).ready(function () {
+      $('#anh1').hover(
+        function () {
+          $(this).attr('src', '../images/dog.jpg');
+          $(this).animate({ width: '300px' }, 300);
+        },
+        function () {
+          $(this).attr('src', '../images/cat.jpg');
+          $(this).animate({ width: '250px' }, 300);
+        }
+      );
+    });
 
   </script>
 </body>
