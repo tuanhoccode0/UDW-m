@@ -27,6 +27,29 @@
 <script>
 $(document).ready(function(){
 
+function themmonhoc(){
+  var ten =$("#txtMon").val().trim();
+
+  if(ten!=""){
+    $("#dsMon").append('<li>' + ten + '</li>');
+      $("#txtMon").val('');
+      $("#txtMon").focus();
+    }
+    else {
+      alert("vui long nhap ten mon hoc!");
+    }
+  }
+
+  $("#btnThem").click(function(){
+    themmonhoc();
+  });
+
+  $("#txtMon").keypress(function(e) {
+    if(e.which === 13){
+      themmonhoc();
+    }
+  });
+
 });
 </script>
 </body>
