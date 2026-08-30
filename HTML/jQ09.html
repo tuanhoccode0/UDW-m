@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>jQ09 - Bài tổng hợp</title>
+<style>
+  body{ font-family: Arial, sans-serif; display:flex; gap:20px; background:#faebd7; }
+  fieldset{ border:1px solid #4a4ae2; margin-bottom:15px; background:#f6e3c5; }
+  .cot-trai{ width:340px; }
+  .cot-phai{ width:400px; background:#f6e3c5; padding:20px; text-align:center; }
+  #dsChuoi{ padding-left:25px; margin:0; }
+  #dsChuoi li{ padding:6px; cursor:pointer; }
+  #dsChuoi li:nth-child(odd){ background:#b491ac; color:#fff; }
+  #dsChuoi li:nth-child(even){ background:#c4f5f5; }
+  .co-bong{ text-shadow: 3px 3px 6px rgba(0,0,0,.6); }
+  #ketQua9{ font-size:48px; margin:0; }
+  button{ padding:5px 10px; cursor:pointer; margin-top:5px; margin-right:5px; }
+</style>
+</head>
+<body>
+
+<div class="cot-trai">
+  <fieldset>
+    <legend>Chọn</legend>
+    <label><input type="radio" name="kieuChu" value="binhthuong" checked> Chữ bình thường</label><br>
+    <label><input type="radio" name="kieuChu" value="cobong"> Chữ có bóng</label><br><br>
+    <label>Chọn màu chữ: <input type="color" id="mauChu" value="#0000ff"></label><br>
+    <button id="btnXoa">Xóa phần tử cuối</button>
+    <button id="btnPhucHoi">Phục hồi</button>
+  </fieldset>
+
+  <fieldset>
+    <legend>Click vào một chuỗi</legend>
+    <ol id="dsChuoi">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JQUERY</li>
+      <li>JAVASCRIPT</li>
+    </ol>
+  </fieldset>
+</div>
+
+<div class="cot-phai">
+  <h1 id="ketQua9" style="color:#0000ff;">HTML</h1>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+
+});
+</script>
+</body>
+</html>

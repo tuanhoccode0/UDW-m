@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>jQ08 - Kéo thả và di chuyển bằng phím mũi tên</title>
+<style>
+  body{ font-family: Arial, sans-serif; }
+  #khung8{ position:relative; width:600px; height:400px; border:1px solid #4a90e2; }
+  #hinhTron{ position:absolute; left:20px; top:20px; width:100px; height:100px;
+             border-radius:50%; background:cyan; cursor:move; }
+  .ghichu{ width:600px; color:#555; font-size:14px; }
+</style>
+</head>
+<body>
+
+<div id="khung8">
+  <div id="hinhTron"></div>
+</div>
+<p class="ghichu">Kéo chuột vào hình tròn để di chuyển, hoặc click vào khung rồi dùng phím mũi tên.</p>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+});
+</script>
+</body>
+</html>

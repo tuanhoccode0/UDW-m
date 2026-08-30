@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>jQ06 - Di chuyển hình chữ nhật</title>
+<style>
+  body{ font-family: Arial, sans-serif; }
+  .khung{ position:relative; width:400px; height:250px; border:1px solid #4a90e2; overflow:hidden; }
+  #hcn{ position:absolute; left:0; top:0; width:150px; height:100px; background:red; }
+  .btnRow{ width:400px; margin-top:8px; }
+  .btnRow button{ padding:6px 12px; cursor:pointer; margin-right:5px; }
+</style>
+</head>
+<body>
+
+<div class="khung">
+  <div id="hcn"></div>
+</div>
+<div class="btnRow">
+  <button id="right">Move right</button>
+  <button id="left">Move left</button>
+  <button id="up">Move up</button>
+  <button id="down">Move down</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+});
+</script>
+</body>
+</html>
